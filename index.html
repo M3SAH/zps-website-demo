@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZORAI Procurement Service Ltd | ZPS Zambia</title>
+    <meta name="description" content="Premium procurement, engineering, logistics, and supply chain solutions across Zambia serving mining, government, NGOs, and corporate sectors.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Floating Action Elements -->
+    <a href="https://wa.me/260970000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast Notification Support -->
+    <div id="toast-notification" class="toast hidden"></div>
+
+    <!-- Header Navigation -->
+    <header id="site-header" class="header-glass">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">ZORAI</span> <span class="logo-main">Procurement</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#whli" class="nav-link">WHLI Batteries</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="mobile-nav-cta">
+                    <a href="#contact" class="btn btn-primary btn-quote">Get Quote</a>
+                </div>
+            </nav>
+
+            <div class="desktop-nav-cta">
+                <a href="#contact" class="btn btn-primary">Get Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" style="background-image: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(93, 42, 140, 0.6)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');">
+            <div class="container hero-container">
+                <div class="hero-content animate-fade-up">
+                    <span class="hero-tagline"><i class="fas fa-shield-alt text-teal"></i> Government & Enterprise Approved Partner</span>
+                    <h1 class="hero-title">Procurement Solutions That Drive Business Growth</h1>
+                    <p class="hero-subtitle">High-tier engineering, heavy logistics, structural procurement, commodity supply, and comprehensive industrial solutions across Zambia.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Request a Quote</a>
+                        <a href="#services" class="btn btn-secondary btn-large">Our Services</a>
+                    </div>
+                </div>
+
+                <!-- Hero Static Badges -->
+                <div class="hero-badges-grid animate-fade-up">
+                    <div class="hero-badge-card">
+                        <div class="badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="badge-info">
+                            <h3>20+ Years</h3>
+                            <p>Combined Experience</p>
+                        </div>
+                    </div>
+                    <div class="hero-badge-card">
+                        <div class="badge-icon"><i class="fas fa-helmet-safety"></i></div>
+                        <div class="badge-info">
+                            <h3>100+ Projects</h3>
+                            <p>Successfully Delivered</p>
+                        </div>
+                    </div>
+                    <div class="hero-badge-card">
+                        <div class="badge-icon"><i class="fas fa-building-shield"></i></div>
+                        <div class="badge-info">
+                            <h3>Govt Approved</h3>
+                            <p>Registered Supplier</p>
+                        </div>
+                    </div>
+                    <div class="hero-badge-card">
+                        <div class="badge-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="badge-info">
+                            <h3>Nationwide</h3>
+                            <p>Logistics Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Clients Marquee -->
+        <section class="ticker-section">
+            <div class="container">
+                <p class="ticker-title">Trusted By Leading Entities Across Sectors</p>
+                <div class="ticker-wrap">
+                    <div class="ticker">
+                        <div class="ticker-item"><i class="fas fa-industry"></i> Konkola Copper Mines</div>
+                        <div class="ticker-item"><i class="fas fa-building"></i> Ministry of Infrastructure</div>
+                        <div class="ticker-item"><i class="fas fa-handshake-angle"></i> USAID Funded NGOs</div>
+                        <div class="ticker-item"><i class="fas fa-truck-ramp-box"></i> First Quantum Minerals</div>
+                        <div class="ticker-item"><i class="fas fa-bolt"></i> ZESCO Commercial Supplies</div>
+                        <div class="ticker-item"><i class="fas fa-dumpster"></i> Mopani Copper Mines</div>
+                        <div class="ticker-item"><i class="fas fa-landmark"></i> Zambia Revenue Authority</div>
+                    </div>
+                    <div class="ticker" aria-hidden="true">
+                        <div class="ticker-item"><i class="fas fa-industry"></i> Konkola Copper Mines</div>
+                        <div class="ticker-item"><i class="fas fa-building"></i> Ministry of Infrastructure</div>
+                        <div class="ticker-item"><i class="fas fa-handshake-angle"></i> USAID Funded NGOs</div>
+                        <div class="ticker-item"><i class="fas fa-truck-ramp-box"></i> First Quantum Minerals</div>
+                        <div class="ticker-item"><i class="fas fa-bolt"></i> ZESCO Commercial Supplies</div>
+                        <div class="ticker-item"><i class="fas fa-dumpster"></i> Mopani Copper Mines</div>
+                        <div class="ticker-item"><i class="fas fa-landmark"></i> Zambia Revenue Authority</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-animate">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="ZORAI Engineers on site" class="about-img">
+                        <div class="about-floating-card glass-card animate-glow">
+                            <i class="fas fa-check-circle text-teal"></i>
+                            <div>
+                                <h4>100% Compliant</h4>
+                                <p>Zambian-Owned Enterprise</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content-wrapper">
+                        <span class="section-pre-title">Who We Are</span>
+                        <h2 class="section-title">Your Professional Procurement & Engineering Partner</h2>
+                        <p class="section-description">ZORAI Procurement Service Ltd (ZPS) is a premier indigenous multi-disciplinary organization delivering institutionalized logistics, engineering services, and strategic commodity trading across sub-Saharan Africa. We specialize in stabilizing corporate supply chains and executing heavy civil and electrical engineering infrastructure mandates.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-warehouse"></i></div>
+                                <div>
+                                    <h5>Supply Chain Experts</h5>
+                                    <p>End-to-end global asset sourcing, customs clearance, and complex route freight tracking.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-gears"></i></div>
+                                <div>
+                                    <h5>Engineering Specialists</h5>
+                                    <p>Grade-A certified execution of heavy structural, civil, and electrical industrial projects.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-landmark"></i></div>
+                                <div>
+                                    <h5>Government & Mining Support</h5>
+                                    <p>Fully compliant with state regulatory frame agreements and strict mining health and safety protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#why-choose-us" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section scroll-animate">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pre-title">Comprehensive Capabilities</span>
+                    <h2 class="section-title">Industrial & Supply Chain Solutions</h2>
+                    <p class="section-subtitle mx-auto">Engineered to streamline corporate asset lifecycles, eliminate operational bottlenecks, and maintain project continuity.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=600" alt="Procurement Sourcing">
+                            <div class="service-icon-floating"><i class="fas fa-clipboard-list"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Procurement Solutions</h3>
+                            <p>Global multi-category strategic sourcing offering optimized cost-efficiency and localized supply lines.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600" alt="Civil Engineering">
+                            <div class="service-icon-floating"><i class="fas fa-helmet-safety"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Civil Engineering</h3>
+                            <p>Heavy structural work, foundations, earthworks, and standard industrial building construction projects.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600" alt="Electrical Infrastructure">
+                            <div class="service-icon-floating"><i class="fas fa-bolt"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Electrical Engineering</h3>
+                            <p>High and medium voltage distribution systems, switchgear maintenance, and sub-station setups.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600" alt="Logistics and Transport">
+                            <div class="service-icon-floating"><i class="fas fa-truck"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Logistics & Transport</h3>
+                            <p>Cross-border corridor trucking, oversized heavy machinery haulage, and rapid route deployment.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1542241647-9cbb2225278b?auto=format&fit=crop&q=80&w=600" alt="Commodity Trading">
+                            <div class="service-icon-floating"><i class="fas fa-globe"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Commodity Trading</h3>
+                            <p>Bulk mineral handling, industrial inputs bulk tracking, agricultural supplies, and chemical delivery.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&q=80&w=600" alt="Mining Supplies">
+                            <div class="service-icon-floating"><i class="fas fa-boxes-stacked"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Mining Supplies</h3>
+                            <p>Premium consumables, exploration equipment, safety apparel, drill bits, and custom ground support items.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600" alt="Industrial Equipment">
+                            <div class="service-icon-floating"><i class="fas fa-wrench"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Industrial Equipment</h3>
+                            <p>Sourcing and deployment of premium valves, hydraulic assemblies, pumps, and localized automation arrays.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="service-card glass-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="Project Management">
+                            <div class="service-icon-floating"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Supply Chain & PM</h3>
+                            <p>End-to-end strategic oversight, quality assurance protocols, risk mapping, and direct site execution.</p>
+                            <a href="#contact" class="service-link">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="products-section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pre-title">Inventory & Sourcing Capability</span>
+                    <h2 class="section-title">Featured Material Categories</h2>
+                    <p class="section-subtitle">Direct manufacturer affiliations ensuring cost-advantaged procurement cycles.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card glass-card">
+                        <div class="product-badge">Premium Line</div>
+                        <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=600" alt="WHLI Heavy Duty Batteries" class="product-img">
+                        <div class="product-body">
+                            <span class="product-cat">Energy Storage</span>
+                            <h3>WHLI Industrial Batteries</h3>
+                            <ul class="product-specs">
+                                <li><strong>Application:</strong> Heavy Haulage / Backup / Mining</li>
+                                <li><strong>Lifespan:</strong> Extended Deep Cycle</li>
+                                <li><strong>Warranty:</strong> Full Corporate Guarantee</li>
+                            </ul>
+                            <a href="#whli" class="btn btn-secondary btn-full">View Product Details</a>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&q=80&w=600" alt="Industrial Mechanical" class="product-img">
+                        <div class="product-body">
+                            <span class="product-cat">Machinery</span>
+                            <h3>Heavy Industrial Equipment</h3>
+                            <ul class="product-specs">
+                                <li><strong>Application:</strong> Material Processing</li>
+                                <li><strong>Certification:</strong> ISO 9001 / CE Certified</li>
+                                <li><strong>Sourcing:</strong> Global OEM Networks</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary btn-full">Request Datasheet</a>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1508873696983-2df519f0397e?auto=format&fit=crop&q=80&w=600" alt="Electrical Components" class="product-img">
+                        <div class="product-body">
+                            <span class="product-cat">Electrical</span>
+                            <h3>Substation Components</h3>
+                            <ul class="product-specs">
+                                <li><strong>Application:</strong> Power Infrastructure</li>
+                                <li><strong>Rating:</strong> Medium to High Voltage</li>
+                                <li><strong>Availability:</strong> Contractual / On-Demand</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary btn-full">Request Datasheet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHLI Batteries Spotlight Section -->
+        <section id="whli" class="whli-section scroll-animate">
+            <div class="container">
+                <div class="whli-grid glass-card">
+                    <div class="whli-content">
+                        <span class="whli-tag"><i class="fas fa-certificate"></i> Official Regional Distributor</span>
+                        <h2 class="whli-title">WHLI Heavy Duty Batteries</h2>
+                        <p class="whli-desc">ZORAI Procurement Service Ltd is the certified tier-1 distributor of WHLI Heavy Duty Cells within Zambia. Engineered to endure harsh sub-Saharan environmental dynamics and intensive operational demands.</p>
+                        
+                        <div class="whli-features-grid">
+                            <div class="whli-feat-item">
+                                <i class="fas fa-battery-full"></i>
+                                <div>
+                                    <h6>High Energy Density</h6>
+                                    <p>Optimized cell composition for sustained drawdowns.</p>
+                                </div>
+                            </div>
+                            <div class="whli-feat-item">
+                                <i class="fas fa-shield-heart"></i>
+                                <div>
+                                    <h6>Rugged Hard-Case Build</h6>
+                                    <p>Vibration-resistant chassis built for mining fields.</p>
+                                </div>
+                            </div>
+                            <div class="whli-feat-item">
+                                <i class="fas fa-hourglass-half"></i>
+                                <div>
+                                    <h6>Extended Cycle Life</h6>
+                                    <p>Up to 40% increased lifecycle over standard options.</p>
+                                </div>
+                            </div>
+                            <div class="whli-feat-item">
+                                <i class="fas fa-truck-moving"></i>
+                                <div>
+                                    <h6>Commercial Fleets</h6>
+                                    <p>Optimally sized configurations for heavy mining machinery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="whli-cta-group">
+                            <a href="#contact" class="btn btn-primary">Request WHLI Procurement Catalog</a>
+                        </div>
+                    </div>
+                    <div class="whli-visual">
+                        <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&q=80&w=800" alt="Industrial Power Units Backup" class="whli-main-img">
+                        <div class="whli-floating-stat">
+                            <span class="stat-num">36Mo</span>
+                            <span class="stat-lbl">Corporate Warranty Included</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-section scroll-animate">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pre-title">Our Strategic Advantages</span>
+                    <h2 class="section-title">Institutional Capacity & Corporate Trust</h2>
+                    <p class="section-subtitle mx-auto">Why Africa’s major operations select ZORAI to manage capital expenditure allocations and high-stakes infrastructure delivery.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-briefcase"></i></div>
+                        <h4>Pro-Tier Governance</h4>
+                        <p>Complete regulatory tracking across trace lines, ensuring bulletproof audit logs for government and multinational entities.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-user-check"></i></div>
+                        <h4>Certified Engineering Staff</h4>
+                        <p>In-house structural, civil, and electrical engineers with active professional board credentials.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h4>Strictest Quality Assured</h4>
+                        <p>Every asset segment clears strict pre-shipment evaluations and material batch testing.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-truck-fast"></i></div>
+                        <h4>Express Lead Times</h4>
+                        <p>Proprietary clearing networks at critical borders prevent freight stagnation and project delays.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-tags"></i></div>
+                        <h4>Optimized Arbitrage Pricing</h4>
+                        <p>Direct volume-scale international buying structures translate to unparalleled cost-advantaged margins.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-map-location-dot"></i></div>
+                        <h4>Comprehensive Logistics</h4>
+                        <p>Inland logistics fleets servicing deep rural developments and complex mining operations.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <div class="why-icon"><i class="fas fa-headset"></i></div>
+                        <h4>24/7 Operations Desk</h4>
+                        <p>Dedicated supply chain managers maintaining updates on live supply streams and deployment issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries We Serve Section -->
+        <section class="industries-section scroll-animate">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pre-title">Sectors Supported</span>
+                    <h2 class="section-title">Industries We Serve Nationwide</h2>
+                </div>
+
+                <div class="industries-grid">
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-industry industry-icon"></i>
+                        <h3>Mining & Refining</h3>
+                    </div>
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-building-columns industry-icon"></i>
+                        <h3>Government Infrastructure</h3>
+                    </div>
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-trowel-bricks industry-icon"></i>
+                        <h3>Heavy Construction</h3>
+                    </div>
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-wheat-awn industry-icon"></i>
+                        <h3>Commercial Agriculture</h3>
+                    </div>
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-gears industry-icon"></i>
+                        <h3>Manufacturing</h3>
+                    </div>
+                    <div class="industry-card" style="background-image: linear-gradient(to top, rgba(17,24,39,0.9), rgba(17,24,39,0.4)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400');">
+                        <i class="fas fa-handshake-angle industry-icon"></i>
+                        <h3>International NGOs</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase Section (Filtered Grid) -->
+        <section id="projects" class="projects-section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pre-title">Track Record of Excellence</span>
+                    <h2 class="section-title">Demonstrated Project Executions</h2>
+                    <p class="section-subtitle">Realized mandates completed within budget constraints and rigorous quality specs.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls-container">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="procurement">Procurement</button>
+                    <button class="filter-btn" data-filter="logistics">Logistics</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <!-- Item 1 -->
+                    <div class="project-item-card glass-card" data-category="engineering">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600" alt="Substation Project">
+                            <div class="project-cat-tag">Engineering</div>
+                        </div>
+                        <div class="project-details">
+                            <h4>Grid Power Interconnection</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Copperbelt Province, Zambia</p>
+                            <p class="project-desc">Complete multi-phase turnkey medium voltage structural line erection for a major extraction refinery site.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="project-item-card glass-card" data-category="procurement">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600" alt="Heavy Valves">
+                            <div class="project-cat-tag">Procurement</div>
+                        </div>
+                        <div class="project-details">
+                            <h4>OEM Process Piping Core Procurement</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Solwezi, Zambia</p>
+                            <p class="project-desc">Bulk coordination, importation, and delivery of specialized high-pressure control valves.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="project-item-card glass-card" data-category="logistics">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600" alt="Heavy Fleet Transport">
+                            <div class="project-cat-tag">Logistics</div>
+                        </div>
+                        <div class="project-details">
+                            <h4>Cross-Border Plant Fleet Mobilization</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Chirundu Entry to North-Western Sector</p>
+                            <p class="project-desc">Escorted logistics handling for out-of-gauge extraction components arriving from sea ports.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="project-item-card glass-card" data-category="procurement">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=600" alt="Battery Cell Banks">
+                            <div class="project-cat-tag">Procurement</div>
+                        </div>
+                        <div class="project-details">
+                            <h4>WHLI Commercial Battery Infrastructure</h4>
+                            <p class="project-location"><i class="fas fa-map-marker-alt"></i> Lusaka Logistics Hub</p>
+                            <p class="project-desc">Sourcing and deploying heavy backup battery storage units for an institutional data facility center.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counters Banner Section -->
+        <section class="stats-counter-section">
+            <div class="container">
+                <div class="stats-counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-number" data-target="500">0</span><span class="counter-suffix">+</span>
+                        <p class="counter-label">Metric Tons Shipped</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-number" data-target="120">0</span><span class="counter-suffix">+</span>
+                        <p class="counter-label">Corporate Clients Satisified</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-number" data-target="25">0</span><span class="counter-suffix">+</span>
+                        <p class="counter-label">Global Manufacturer Alliances</p>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-number" data-target="10">0</span><span class="counter-suffix">+</span>
+                        <p class="counter-label">Sectors Supported Safely</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Carousel Section -->
+        <section class="testimonials-section scroll-animate">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pre-title">Client Appraisals</span>
+                    <h2 class="section-title">Endorsements From Industry Leaders</h2>
+                </div>
+
+                <div class="carousel-outer-wrapper">
+                    <div class="testimonial-carousel" id="testimonial-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-card glass-card">
+                                <div class="rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="testimonial-text">"ZORAI Procurement achieved remarkable efficiency metrics during our capital equipment upgrade program. Their distribution of WHLI batteries solved our field deployment runtime degradation issues. Outstanding logistics management."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-details">
+                                        <h5>M. Mwansa</h5>
+                                        <p>Senior Infrastructure Director | Mining Group Operations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-card">
+                                <div class="rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="testimonial-text">"Execution risk is a critical friction factor when dealing with public tenders. ZPS demonstrated strict compliance transparency and met tough civil milestones within tight scheduling requirements."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-details">
+                                        <h5>Eng. K. Chanda</h5>
+                                        <p>Procurement Unit Lead | Provincial Project Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Navigation -->
+                    <div class="carousel-controls">
+                        <button class="ctrl-btn prev-btn" aria-label="Previous Testimonial"><i class="fas fa-arrow-left"></i></button>
+                        <div class="carousel-dots" id="carousel-dots-container"></div>
+                        <button class="ctrl-btn next-btn" aria-label="Next Testimonial"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action Section Banner -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <div class="cta-banner-content text-center">
+                    <h2>Looking for a Reliable Procurement & Engineering Partner?</h2>
+                    <p>Connect with our corporate supply chain experts to coordinate your tender execution requirements, schedule asset acquisitions, or deploy heavy civil engineering structures.</p>
+                    <div class="cta-actions">
+                        <a href="#contact" class="btn btn-primary btn-large">Request Immediate Tender Quote</a>
+                        <a href="tel:+260970000000" class="btn btn-transparent"><i class="fas fa-phone-volume"></i> Speak With an Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-animate">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left Column Info/Map -->
+                    <div class="contact-info-wrapper">
+                        <span class="section-pre-title">Get In Touch</span>
+                        <h2 class="section-title">Let's Discuss Your Institutional Demands</h2>
+                        <p class="contact-intro-text">Visit our main corporate corporate offices or route an official request for quotation through our rapid intake digital handling desk.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-map-location-dot"></i></div>
+                                <div>
+                                    <h6>Corporate Headquarters</h6>
+                                    <p>Plot 4810, Great East Road, Corporate Park Area, Lusaka, Zambia</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-envelope-open-text"></i></div>
+                                <div>
+                                    <h6>Official Inquiries</h6>
+                                    <p>tender@zorai.co.zm<br>info@zorai.co.zm</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-phone-flip"></i></div>
+                                <div>
+                                    <h6>Direct Business Lines</h6>
+                                    <p>+260 97 000 0000<br>+260 21 100 0000</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h6>Standard Working Hours</h6>
+                                    <p>Monday – Friday: 08:00 – 17:00 CAT<br>Saturday Logistics Hub Open: 08:00 – 12:00 CAT</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Structural Vector Map Placeholder -->
+                        <div class="map-placeholder-container">
+                            <div class="map-mock">
+                                <i class="fas fa-map-location-dot map-bg-icon"></i>
+                                <div class="map-pin">
+                                    <div class="pin-pulse"></div>
+                                    <i class="fas fa-building-flag"></i>
+                                    <span class="pin-lbl">ZORAI HQ - Lusaka</span>
+                                </div>
+                                <p class="map-notice">Interactive Location Map Array Enabled</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Glass Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="glass-card contact-form-card">
+                            <h3>Corporate Intake Request</h3>
+                            <p>Complete the procurement request framework below. Secure encrypted intake routing.</p>
+                            
+                            <form id="procurement-intake-form" novalidate>
+                                <div class="form-group-row">
+                                    <div class="form-field">
+                                        <label for="contact-name">Authorized Officer Name *</label>
+                                        <input type="text" id="contact-name" required placeholder="e.g. John Banda">
+                                        <span class="field-error-msg">Name input field is required</span>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-company">Company / Institution Name *</label>
+                                        <input type="text" id="contact-company" required placeholder="e.g. Copperbelt Mining Ltd">
+                                        <span class="field-error-msg">Organization indicator is required</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group-row">
+                                    <div class="form-field">
+                                        <label for="contact-email">Corporate Email Address *</label>
+                                        <input type="email" id="contact-email" required placeholder="name@company.com">
+                                        <span class="field-error-msg">Valid institutional email is required</span>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-phone">Contact Telephone Number *</label>
+                                        <input type="tel" id="contact-phone" required placeholder="e.g. +26097000000">
+                                        <span class="field-error-msg">Phone tracking sequence required</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="contact-subject">Primary Scope Area *</label>
+                                    <select id="contact-subject" required>
+                                        <option value="" disabled selected>Select Scope Option...</option>
+                                        <option value="Procurement Solutions">Procurement Solutions Sourcing</option>
+                                        <option value="WHLI Batteries Order">WHLI Industrial Batteries Order</option>
+                                        <option value="Civil/Electrical Engineering">Civil / Electrical Engineering Mandate</option>
+                                        <option value="Logistics & Transport">Heavy Cargo / Logistics Deployment</option>
+                                        <option value="General Corporate Tender">General Corporate Tender Invitation</option>
+                                    </select>
+                                    <span class="field-error-msg">Please specify a scope operational area</span>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="contact-message">Detailed Scope / Material Specifications *</label>
+                                    <textarea id="contact-message" rows="5" required placeholder="Provide bill of quantities, logistical timelines, target delivery zones, or specific engineering requirements..."></textarea>
+                                    <span class="field-error-msg">Scope description detail cannot be left empty</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full btn-submit-form">
+                                    <span class="btn-text">Transmit Procurement Request</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <!-- Branding Block -->
+                <div class="footer-brand-block">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-accent">ZORAI</span> <span>Procurement</span>
+                    </a>
+                    <p class="footer-brand-desc">Institutional procurement, engineering services, and tactical logistics across Zambia. Regulating operational friction with global asset tracking networks.</p>
+                    <div class="social-links-row">
+                        <a href="#" aria-label="LinkedIn Profile Link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X Corporate Account Link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook Profile Link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Links -->
+                <div class="footer-links-block">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="#services">Procurement Solutions</a></li>
+                        <li><a href="#services">Civil Engineering Mandates</a></li>
+                        <li><a href="#services">Electrical Infrastructure</a></li>
+                        <li><a href="#services">Heavy Cargo Logistics</a></li>
+                        <li><a href="#services">Mining Supply Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products Links -->
+                <div class="footer-links-block">
+                    <h4>Premium Products</h4>
+                    <ul>
+                        <li><a href="#whli">WHLI Heavy Duty Batteries</a></li>
+                        <li><a href="#products">Heavy Industrial Equipment</a></li>
+                        <li><a href="#products">Substation Components</a></li>
+                        <li><a href="#products">Mining Consumables</a></li>
+                        <li><a href="#products">Safety Apparel & PPE</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Sourcing -->
+                <div class="footer-newsletter-block">
+                    <h4>Market Logistics Brief</h4>
+                    <p>Subscribe to our periodic distribution briefing covering sub-Saharan supply chain movements and border lead-time metrics.</p>
+                    <form id="newsletter-form" class="newsletter-form-box">
+                        <input type="email" placeholder="Corporate email address" required aria-label="Newsletter email address">
+                        <button type="submit" aria-label="Subscribe to briefing"><i class="fas fa-chevron-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-txt">&copy; 2026 ZORAI Procurement Service Ltd (ZPS). All Rights Reserved. Regulated Supplier Network.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Compliance Assured</a>
+                    <span class="separator">|</span>
+                    <a href="#">Terms of Engagement</a>
+                    <span class="separator">|</span>
+                    <a href="#">Zambian Local Content Compliant</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript Logic Core -->
+    <script src="js/script.js"></script>
+</body>
+</html>
