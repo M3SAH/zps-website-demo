@@ -1,0 +1,36 @@
+@media (max-width: 1024px) {
+    .split-layout { gap: 2rem; }
+    .hero-content { padding: 2.5rem; }
+    .industry-block { grid-template-columns: 1fr; }
+    .industry-block.reverse .ind-content { order: 0; }
+}
+
+@media (max-width: 768px) {
+    /* Navigation Override */
+    .mobile-toggle { display: block; }
+    .main-nav { position: fixed; top: 0; right: -100%; width: 300px; height: 100vh; background: var(--color-dark-charcoal); padding: 80px 2rem 2rem; transition: right 0.3s ease; }
+    .main-nav.open { right: 0; box-shadow: -5px 0 30px rgba(0,0,0,0.2); }
+    .main-nav ul { flex-direction: column; gap: 1.5rem; }
+    .main-nav a { color: var(--color-white); font-size: 1.2rem; }
+    
+    /* Layout Overrides */
+    .split-layout { grid-template-columns: 1fr; }
+    .split-layout.reverse .split-visual { order: 0; }
+    .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+    
+    .hero-immersive { padding: 0 1rem; }
+    .hero-content { padding: 2rem; margin-top: 40px; }
+    .cta-group { flex-direction: column; }
+    
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
+    
+    .job-card { flex-direction: column; text-align: left; align-items: flex-start; gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    section { padding: 3rem 0; }
+    .custom-form { padding: 1.5rem; }
+}

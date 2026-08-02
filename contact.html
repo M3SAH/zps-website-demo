@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Zorai Procurement Solutions Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">[LOGO HERE]</a>
+            <button class="mobile-toggle"><span class="hamburger"></span></button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container text-center reveal-fade-up">
+                <h1>Initiate a Tender</h1>
+                <p class="lead-text">Connect with our corporate supply chain experts to coordinate your operational requirements.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="contact-info reveal-slide-right">
+                        <h2>Corporate Headquarters</h2>
+                        <div class="info-block">
+                            <h4>Address</h4>
+                            <p>[OFFICE ADDRESS HERE]<br>Lusaka, Zambia</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Direct Lines</h4>
+                            <p>Phone: [PHONE NUMBER HERE]<br>Support: [PHONE NUMBER HERE]</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Electronic Mail</h4>
+                            <p>Tenders: tender@zorai.co.zm<br>General: info@zorai.co.zm</p>
+                        </div>
+                        <div class="map-container">
+                            <div class="image-placeholder map">[MAP HERE]</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper reveal-slide-left bg-light">
+                        <h2>Procurement Request</h2>
+                        <form id="contact-form" class="custom-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Authorized Officer Name</label>
+                                <input type="text" id="name" required>
+                                <span class="error-msg">Required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Institution Name</label>
+                                <input type="text" id="company" required>
+                                <span class="error-msg">Required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Corporate Email</label>
+                                <input type="email" id="email" required>
+                                <span class="error-msg">Valid email required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Primary Scope</label>
+                                <select id="service" required>
+                                    <option value="">Select an option...</option>
+                                    <option value="procurement">Procurement Solutions</option>
+                                    <option value="engineering">Civil / Electrical Engineering</option>
+                                    <option value="logistics">Heavy Cargo Logistics</option>
+                                </select>
+                                <span class="error-msg">Required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Detailed Scope Specifications</label>
+                                <textarea id="message" rows="5" required></textarea>
+                                <span class="error-msg">Required</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Transmit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer bg-dark text-light">
+        <div class="container text-center">
+            <a href="index.html" class="logo-footer">[LOGO HERE]</a>
+            <p>&copy; 2026 Zorai Procurement Solutions Limited.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>
