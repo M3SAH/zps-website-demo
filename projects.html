@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Zorai Procurement Solutions Limited</title>
+    <title>Projects | Zorai Procurement Services Limited</title>
+    <meta name="description" content="Project and capability highlights for Zorai Procurement Services Limited across civil engineering, industrial procurement, electrical, mechanical and logistics support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/animations.js" defer></script>
 </head>
 <body>
     <header class="site-header" id="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">[LOGO HERE]</a>
-            <button class="mobile-toggle"><span class="hamburger"></span></button>
-            <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">ZPS</span>
+                <span>[ZPS LOGO HERE]</span>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
                     <li><a href="projects.html" class="active">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -26,52 +40,52 @@
 
     <main>
         <section class="page-header">
-            <div class="container text-center reveal-fade-up">
-                <h1>Featured Executions</h1>
-                <p class="lead-text">A portfolio of our most complex logistical and engineering mandates.</p>
+            <div class="container text-center reveal">
+                <span class="eyebrow">Projects &amp; Capabilities</span>
+                <h1>A selection of areas where ZPS provides procurement, supply and engineering support.</h1>
             </div>
         </section>
 
-        <section class="portfolio-grid">
+        <section class="section">
             <div class="container">
                 <div class="grid-2">
-                    <article class="project-card reveal-fade-up">
-                        <div class="image-placeholder proj-img">[PROJECT DETAILS HERE]</div>
-                        <div class="project-info">
-                            <span class="category">Civil Engineering</span>
-                            <h3>Copperbelt Substation Expansion</h3>
-                            <ul class="project-meta">
-                                <li><strong>Client:</strong> [CLIENT NAME HERE]</li>
-                                <li><strong>Location:</strong> Ndola, Zambia</li>
-                            </ul>
-                            <p>Turnkey medium voltage structural line erection and earthworks for a major refinery expansion.</p>
+                    <article class="project-card reveal">
+                        <div class="image-placeholder">[PROJECT IMAGE HERE]</div>
+                        <div class="card-body">
+                            <h3>Civil Engineering &amp; Construction</h3>
+                            <p>[PROJECT DESCRIPTION HERE]</p>
                         </div>
                     </article>
 
-                    <article class="project-card reveal-fade-up">
-                        <div class="image-placeholder proj-img">[PROJECT DETAILS HERE]</div>
-                        <div class="project-info">
-                            <span class="category">Procurement & Logistics</span>
-                            <h3>Heavy Fleet Mobilization</h3>
-                            <span class="category">Procurement & Logistics</span>
-                            <ul class="project-meta">
-                                <li><strong>Client:</strong> [CLIENT NAME HERE]</li>
-                                <li><strong>Location:</strong> North-Western Province</li>
-                            </ul>
-                            <p>End-to-end global sourcing, port clearance, and escorted transport of out-of-gauge extraction components.</p>
+                    <article class="project-card reveal">
+                        <div class="image-placeholder">[PROJECT IMAGE HERE]</div>
+                        <div class="card-body">
+                            <h3>Industrial Procurement</h3>
+                            <p>[PROJECT DESCRIPTION HERE]</p>
                         </div>
                     </article>
-                    
-                     <article class="project-card reveal-fade-up">
-                        <div class="image-placeholder proj-img">[PROJECT DETAILS HERE]</div>
-                        <div class="project-info">
-                            <span class="category">Industrial Supply</span>
-                            <h3>Process Piping Core Procurement</h3>
-                            <ul class="project-meta">
-                                <li><strong>Client:</strong> [CLIENT NAME HERE]</li>
-                                <li><strong>Location:</strong> Solwezi, Zambia</li>
-                            </ul>
-                            <p>Bulk coordination, importation, and delivery of specialized high-pressure control valves for an active mining site.</p>
+
+                    <article class="project-card reveal">
+                        <div class="image-placeholder">[PROJECT IMAGE HERE]</div>
+                        <div class="card-body">
+                            <h3>Electrical &amp; Instrumentation</h3>
+                            <p>[PROJECT DESCRIPTION HERE]</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="image-placeholder">[PROJECT IMAGE HERE]</div>
+                        <div class="card-body">
+                            <h3>Mechanical &amp; Pumping Solutions</h3>
+                            <p>[PROJECT DESCRIPTION HERE]</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="image-placeholder">[PROJECT IMAGE HERE]</div>
+                        <div class="card-body">
+                            <h3>Supply &amp; Logistics</h3>
+                            <p>[PROJECT DESCRIPTION HERE]</p>
                         </div>
                     </article>
                 </div>
@@ -79,15 +93,42 @@
         </section>
     </main>
 
-    <footer class="site-footer bg-dark text-light">
-        <div class="container text-center">
-            <a href="index.html" class="logo-footer">[LOGO HERE]</a>
-            <p>&copy; 2026 Zorai Procurement Solutions Limited.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo-footer">
+                        <span class="logo-mark">ZPS</span>
+                        <span>[ZPS LOGO HERE]</span>
+                    </a>
+                    <p>Creating Relationships Through Value</p>
+                    <p>Zorai Procurement Services Limited provides procurement, supply, engineering and industrial solutions based on client requirements.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Zorai MVC Office<br>Villa 4, Mulungushi Village Complex<br>Kalundu, Lusaka</p>
+                    <p><strong>0211 359 225</strong></p>
+                    <p><a href="mailto:info@zpszambia.com">info@zpszambia.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Zorai Procurement Services Limited. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/animations.js"></script>
 </body>
 </html>

@@ -1,5 +1,12 @@
-/** Core Initialization */
 document.addEventListener('DOMContentLoaded', () => {
-    // Basic utilities can sit here if required globally
-    console.log("Zorai Procurement Solutions Platform Initialized");
+    const header = document.getElementById('header');
+
+    if (header) {
+        const setHeaderState = () => {
+            header.classList.toggle('scrolled', window.scrollY > 20);
+        };
+
+        setHeaderState();
+        window.addEventListener('scroll', setHeaderState, { passive: true });
+    }
 });

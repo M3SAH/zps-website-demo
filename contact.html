@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Zorai Procurement Services Limited</title>
+    <title>Contact | Zorai Procurement Services Limited</title>
+    <meta name="description" content="Contact Zorai Procurement Services Limited to discuss your procurement, supply or engineering requirements.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/forms.js" defer></script>
 </head>
 <body>
     <header class="site-header" id="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">[LOGO HERE]</a>
-            <button class="mobile-toggle"><span class="hamburger"></span></button>
-            <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">ZPS</span>
+                <span>[ZPS LOGO HERE]</span>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
@@ -25,68 +41,87 @@
 
     <main>
         <section class="page-header">
-            <div class="container text-center reveal-fade-up">
-                <h1>Initiate a Tender</h1>
-                <p class="lead-text">Connect with our corporate supply chain experts to coordinate your operational requirements.</p>
+            <div class="container text-center reveal">
+                <span class="eyebrow">Contact ZPS</span>
+                <h1>Let's discuss your procurement, supply or engineering requirements.</h1>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="section">
             <div class="container">
                 <div class="split-layout">
-                    <div class="contact-info reveal-slide-right">
-                        <h2>Corporate Headquarters</h2>
-                        <div class="info-block">
-                            <h4>Address</h4>
-                            <p>[OFFICE ADDRESS HERE]<br>Lusaka, Zambia</p>
-                        </div>
-                        <div class="info-block">
-                            <h4>Direct Lines</h4>
-                            <p>Phone: [PHONE NUMBER HERE]<br>Support: [PHONE NUMBER HERE]</p>
-                        </div>
-                        <div class="info-block">
-                            <h4>Electronic Mail</h4>
-                            <p>Tenders: tender@zorai.co.zm<br>General: info@zorai.co.zm</p>
-                        </div>
-                        <div class="map-container">
-                            <div class="image-placeholder map">[MAP HERE]</div>
+                    <div class="contact-card reveal">
+                        <div class="card-body">
+                            <h2>Main Office</h2>
+
+                            <div class="info-block">
+                                <h4>Zorai MVC Office</h4>
+                                <p>Villa 4<br>Mulungushi Village Complex<br>Kalundu<br>Lusaka<br>Zambia</p>
+                            </div>
+
+                            <div class="info-block">
+                                <h4>Phone</h4>
+                                <p>0211 359 225</p>
+                            </div>
+
+                            <div class="info-block">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@zpszambia.com">info@zpszambia.com</a></p>
+                            </div>
+
+                            <div class="image-placeholder map">[GOOGLE MAP / OFFICE LOCATION HERE]</div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form-wrapper reveal-slide-left bg-light">
-                        <h2>Procurement Request</h2>
-                        <form id="contact-form" class="custom-form" novalidate>
-                            <div class="form-group">
-                                <label for="name">Authorized Officer Name</label>
-                                <input type="text" id="name" required>
-                                <span class="error-msg">Required</span>
+
+                    <div class="form-card reveal">
+                        <h2>Send an Enquiry</h2>
+                        <form id="contact-form" novalidate>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="company">Company / Organisation</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="service">Service Required</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select a service...</option>
+                                        <option>Procurement &amp; General Supply</option>
+                                        <option>Commodities</option>
+                                        <option>Civil Engineering</option>
+                                        <option>Plumbing</option>
+                                        <option>Electrical Engineering</option>
+                                        <option>Mechanical Engineering</option>
+                                        <option>Industrial Supplies</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="company">Institution Name</label>
-                                <input type="text" id="company" required>
-                                <span class="error-msg">Required</span>
+
+                            <div class="cta-row">
+                                <button type="submit" class="btn btn-primary">Send Enquiry</button>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Corporate Email</label>
-                                <input type="email" id="email" required>
-                                <span class="error-msg">Valid email required</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Primary Scope</label>
-                                <select id="service" required>
-                                    <option value="">Select an option...</option>
-                                    <option value="procurement">Procurement Services</option>
-                                    <option value="engineering">Civil / Electrical Engineering</option>
-                                    <option value="logistics">Heavy Cargo Logistics</option>
-                                </select>
-                                <span class="error-msg">Required</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Detailed Scope Specifications</label>
-                                <textarea id="message" rows="5" required></textarea>
-                                <span class="error-msg">Required</span>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Transmit Request</button>
+                            <div id="form-status" class="form-status" aria-live="polite"></div>
                         </form>
                     </div>
                 </div>
@@ -94,16 +129,42 @@
         </section>
     </main>
 
-    <footer class="site-footer bg-dark text-light">
-        <div class="container text-center">
-            <a href="index.html" class="logo-footer">[LOGO HERE]</a>
-            <p>&copy; 2026 Zorai Procurement Services Limited.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo-footer">
+                        <span class="logo-mark">ZPS</span>
+                        <span>[ZPS LOGO HERE]</span>
+                    </a>
+                    <p>Creating Relationships Through Value</p>
+                    <p>Zorai Procurement Services Limited provides procurement, supply, engineering and industrial solutions based on client requirements.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Zorai MVC Office<br>Villa 4, Mulungushi Village Complex<br>Kalundu, Lusaka</p>
+                    <p><strong>0211 359 225</strong></p>
+                    <p><a href="mailto:info@zpszambia.com">info@zpszambia.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Zorai Procurement Services Limited. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/forms.js"></script>
 </body>
 </html>

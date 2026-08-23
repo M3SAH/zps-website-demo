@@ -1,44 +1,57 @@
-/** Form Validation Simulation Engine */
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
-    
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            let isValid = true;
-            
-            const inputs = form.querySelectorAll('input, select, textarea');
-            inputs.forEach(input => {
-                const formGroup = input.closest('.form-group');
-                if (!input.checkValidity()) {
-                    formGroup.classList.add('invalid');
-                    isValid = false;
-                } else {
-                    formGroup.classList.remove('invalid');
-                }
-            });
 
-            if (isValid) {
-                // Simulate processing
-                const btn = form.querySelector('button');
-                const originalText = btn.innerText;
-                btn.innerText = "Transmitting...";
-                btn.style.opacity = "0.7";
-                
-                setTimeout(() => {
-                    alert("Tender Request Successfully Logged (Local Simulation).");
-                    form.reset();
-                    btn.innerText = originalText;
-                    btn.style.opacity = "1";
-                }, 1500);
+    if (!form) return;
+
+    const statusBox = document.getElementById('form-status');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        let valid = true;
+        const fields = form.querySelectorAll('input, select, textarea');
+
+        fields.forEach((field) => {
+            const group = field.closest('.form-group');
+            const hasValue = field.value.trim();
+
+            if (!field.checkValidity() || !hasValue) {
+                valid = false;
+                if (group) group.classList.add('invalid');
+            } else if (group) {
+                group.classList.remove('invalid');
             }
         });
 
-        // Clear validation errors on typing
-        form.addEventListener('input', (e) => {
-            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
-                e.target.closest('.form-group').classList.remove('invalid');
+        if (!valid) {
+            if (statusBox) {
+                statusBox.textContent = 'Please complete all required fields before sending your enquiry.';
+                statusBox.classList.add('visible');
             }
-        });
-    }
+            return;
+        }
+
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+
+        if (statusBox) {
+            statusBox.textContent = 'Thank you. Your enquiry has been prepared locally for review and can be connected to a real email backend later.';
+            statusBox.classList.add('visible');
+        }
+
+        setTimeout(() => {
+            form.reset();
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+        }, 1200);
+    });
+
+    form.addEventListener('input', (event) => {
+        const target = event.target;
+        const group = target.closest('.form-group');
+        if (group) group.classList.remove('invalid');
+    });
 });
