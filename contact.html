@@ -7,7 +7,7 @@
     <meta name="description" content="Contact Zorai Procurement Services Limited to discuss your procurement, supply or engineering requirements.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
     <script src="js/navigation.js" defer></script>
@@ -18,8 +18,7 @@
     <header class="site-header" id="header">
         <div class="nav-container">
             <a href="index.html" class="logo" aria-label="ZPS home">
-                <span class="logo-mark">ZPS</span>
-                <span class="logo-text">[ZPS LOGO HERE]</span>
+                <img src="images/zorai-logo.svg" alt="Zorai Procurement Services" class="logo-image">
             </a>
 
             <button class="mobile-toggle" aria-label="Toggle menu" aria-controls="main-navigation" aria-expanded="false" type="button">
@@ -114,15 +113,18 @@
                                 <label for="service">Service Required</label>
                                 <select id="service" name="service" required>
                                     <option value="">Select a service...</option>
-                                    <option>Procurement &amp; General Supply</option>
+                                    <option>General Procurement</option>
+                                    <option>Vehicle Batteries</option>
                                     <option>Commodities</option>
                                     <option>Civil Engineering</option>
                                     <option>Plumbing</option>
                                     <option>Electrical Engineering</option>
                                     <option>Mechanical Engineering</option>
                                     <option>Industrial Supplies</option>
+                                    <option>Civil Servant Programme</option>
                                     <option>Other</option>
                                 </select>
+                                <div id="service-context" class="service-context" aria-live="polite" hidden></div>
                             </div>
 
                             <div class="form-group full-width">
@@ -178,8 +180,7 @@
             <div class="footer-grid">
                 <div class="footer-col footer-brand">
                     <a href="index.html" class="logo footer-logo" aria-label="ZPS home">
-                        <span class="logo-mark">ZPS</span>
-                        <span class="logo-text">[ZPS LOGO HERE]</span>
+                        <img src="images/zorai-logo.svg" alt="Zorai Procurement Services" class="logo-image">
                     </a>
                     <p class="brand-tag">Creating Relationships Through Value</p>
                 </div>

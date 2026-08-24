@@ -1,23 +1,23 @@
 :root {
-    --deep-purple: #25003D;
-    --dark-purple: #35004F;
-    --primary-purple: #52006F;
-    --rich-purple: #72008F;
-    --magenta-purple: #9300A3;
-    --soft-purple: #B64CC2;
-    --light-purple: #F5EAF7;
+    --deep-purple: #2B093F;
+    --dark-purple: #2B093F;
+    --primary-purple: #7E277C;
+    --rich-purple: #7E277C;
+    --magenta-purple: #9D4B9D;
+    --soft-purple: #D9BCD5;
+    --light-purple: #F5ECF7;
     --off-white: #FAF8FB;
     --white: #FFFFFF;
     --dark-text: #17131A;
     --muted-text: #68616D;
-    --border: rgba(82, 0, 111, 0.12);
-    --shadow: 0 22px 50px rgba(37, 0, 61, 0.10);
+    --border: rgba(126, 39, 124, 0.12);
+    --shadow: 0 22px 50px rgba(43, 9, 63, 0.10);
     --radius: 22px;
     --radius-sm: 14px;
     --content-width: 1280px;
     --header-height: 92px;
-    --heading-font: 'Manrope', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -121,6 +121,46 @@ main {
 .section-header-light h2,
 .section-header-light .eyebrow { color: var(--white); }
 
+body,
+button,
+input,
+select,
+textarea,
+a,
+.logo,
+.site-header,
+.main-nav,
+.btn,
+.form-group label,
+.contact-link,
+.footer-links a,
+.footer-phone,
+.service-item,
+.product-body h3,
+.product-body p,
+.industry-content h3,
+.why-item h3,
+.why-item p,
+.logo-card,
+.featured-project-overlay h2,
+.featured-project-overlay p,
+.contact-panel,
+.form-card,
+.office-copy,
+.timeline-copy,
+.mission-panel,
+.approach-item,
+.story-copy,
+.intro-copy,
+.service-feature-copy,
+.future-product-card h3,
+.dealership-copy,
+.dealership-copy li,
+.tyre-copy p,
+.founder-copy p {
+    font-family: var(--body-font);
+}
+
 .eyebrow {
     display: inline-block;
     margin-bottom: 1rem;
@@ -155,11 +195,11 @@ main {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-purple), var(--magenta-purple));
     color: var(--white);
-    box-shadow: 0 16px 26px rgba(82, 0, 111, 0.22);
+    box-shadow: 0 16px 26px rgba(126, 39, 124, 0.22);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 16px 32px rgba(82, 0, 111, 0.28);
+    box-shadow: 0 16px 32px rgba(126, 39, 124, 0.28);
 }
 
 .btn-secondary {
@@ -175,7 +215,7 @@ main {
 .btn-light {
     background: var(--white);
     color: var(--primary-purple);
-    border-color: rgba(82, 0, 111, 0.12);
+    border-color: rgba(126, 39, 124, 0.12);
 }
 
 .btn-light:hover {
@@ -206,21 +246,25 @@ main {
     color: var(--white);
 }
 
-.logo-mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.7rem;
-    height: 2.7rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #f5eaf7, #52006f 45%, #9300a3);
-    color: var(--white);
-    font-size: 0.76rem;
-    box-shadow: 0 10px 24px rgba(82, 0, 111, 0.24);
+.logo-image {
+    display: block;
+    height: 85px;
+    width: auto;
+    max-width: 380px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.25s ease;
 }
 
 .site-header.scrolled .logo {
     color: var(--dark-text);
+}
+
+.site-header.scrolled .logo-image {
+    filter: none;
+}
+
+.site-footer .logo-image {
+    filter: brightness(0) invert(1);
 }
 
 .logo-text {
@@ -243,7 +287,7 @@ main {
     background: rgba(250, 248, 251, 0.96);
     backdrop-filter: blur(12px);
     border-bottom-color: var(--border);
-    box-shadow: 0 18px 40px rgba(37, 0, 61, 0.08);
+    box-shadow: 0 18px 40px rgba(43, 9, 63, 0.08);
 }
 
 .nav-container {
@@ -310,7 +354,7 @@ main {
 
 .hero {
     position: relative;
-    background: linear-gradient(135deg, rgba(37, 0, 61, 0.96), rgba(82, 0, 111, 0.92));
+    background: linear-gradient(135deg, rgba(43, 9, 63, 0.96), rgba(126, 39, 124, 0.92));
     overflow: hidden;
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -597,7 +641,7 @@ main {
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 18px;
     color: var(--white);
-    box-shadow: 0 22px 44px rgba(82, 0, 111, 0.18);
+    box-shadow: 0 22px 44px rgba(126, 39, 124, 0.18);
 }
 
 .info-box::before {
@@ -662,7 +706,7 @@ main {
     font-size: clamp(2rem, 2.5vw, 2.5rem);
     font-weight: 800;
     line-height: 1;
-    color: rgba(37, 0, 61, 0.38);
+    color: rgba(43, 9, 63, 0.38);
     transition: color 0.25s ease;
 }
 
@@ -771,6 +815,375 @@ main {
 .product-body p {
     margin-bottom: 0;
     font-size: 0.96rem;
+}
+
+.dealership-section,
+.battery-program-section,
+.partnership-section,
+.target-section,
+.civil-servant-programme-section,
+.future-products-section,
+.tyre-section,
+.founder-message-section {
+    background: var(--off-white);
+}
+
+.battery-program-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.battery-program-copy {
+    max-width: 620px;
+}
+
+.battery-program-copy h2 {
+    margin-bottom: 1rem;
+}
+
+.battery-program-copy p {
+    margin-bottom: 1.2rem;
+}
+
+.check-list,
+.target-list {
+    list-style: none;
+    display: grid;
+    gap: 0.85rem;
+    margin: 0 0 1.8rem;
+    padding: 0;
+}
+
+.check-list li,
+.target-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    color: var(--muted-text);
+    font-weight: 500;
+}
+
+.check-list li::before,
+.target-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-purple);
+}
+
+.battery-program-visual,
+.partnership-media,
+.partnership-image,
+.battery-image,
+.programme-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.battery-image,
+.partnership-image,
+.programme-visual {
+    width: 100%;
+    min-height: 360px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(82,0,111,0.08), rgba(147,0,163,0.04));
+    color: var(--primary-purple);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 18px 36px rgba(37,0,61,0.05);
+}
+
+.partnership-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.partnership-copy {
+    max-width: 640px;
+}
+
+.partnership-copy h2 {
+    margin-bottom: 1rem;
+}
+
+.partnership-copy p {
+    margin-bottom: 1rem;
+}
+
+.psmd-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    min-width: 120px;
+    min-height: 52px;
+    border-radius: 999px;
+    background: rgba(126, 39, 124, 0.08);
+    border: 1px solid rgba(126, 39, 124, 0.12);
+    color: var(--primary-purple);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.target-panel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 2.2rem;
+    box-shadow: var(--shadow);
+}
+
+.target-panel h2 {
+    margin-bottom: 1rem;
+}
+
+.target-panel p {
+    margin-bottom: 1.2rem;
+}
+
+.civil-programme-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.civil-programme-copy {
+    max-width: 560px;
+}
+
+.civil-programme-copy h2 {
+    margin-bottom: 0.8rem;
+}
+
+.programme-subheading {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--primary-purple);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.86rem;
+}
+
+.civil-programme-product {
+    padding: 1.5rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+}
+
+.product-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(82,0,111,0.08);
+    color: var(--primary-purple);
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.product-card-copy {
+    margin-bottom: 1rem;
+}
+
+.product-card-copy h3 {
+    margin-bottom: 0.6rem;
+}
+
+.programme-visual {
+    min-height: 240px;
+    margin-bottom: 1.2rem;
+}
+
+.future-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.future-product-card {
+    position: relative;
+    padding: 1.5rem 1.2rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: 0 16px 36px rgba(37,0,61,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.future-product-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(126, 39, 124, 0.18);
+    box-shadow: var(--shadow);
+}
+
+.future-number {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    font-size: clamp(2rem, 2.8vw, 2.8rem);
+    font-weight: 800;
+    color: rgba(82,0,111,0.34);
+}
+
+.future-product-card h3 {
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+}
+
+.service-context {
+    margin-top: 0.6rem;
+    padding: 0.7rem 0.85rem;
+    border-radius: 12px;
+    background: rgba(126, 39, 124, 0.06);
+    border: 1px solid rgba(126, 39, 124, 0.08);
+    color: var(--primary-purple);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.service-context[hidden] {
+    display: none;
+}
+
+.dealership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
+}
+
+.dealership-card {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 24px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    box-shadow: 0 18px 36px rgba(37,0,61,0.05);
+}
+
+.dealership-image {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(126,39,124,0.08), rgba(43,9,63,0.04));
+    color: var(--primary-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dealership-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dealership-copy h3 {
+    margin-bottom: 0.75rem;
+}
+
+.dealership-copy p {
+    margin-bottom: 0.8rem;
+}
+
+.dealership-copy ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.dealership-copy li {
+    position: relative;
+    padding-left: 1.15rem;
+    color: var(--muted-text);
+}
+
+.dealership-copy li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--primary-purple);
+}
+
+.tyre-layout,
+.founder-message-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tyre-image,
+.founder-photo {
+    width: 100%;
+    min-height: 320px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(126,39,124,0.08), rgba(43,9,63,0.04));
+    color: var(--primary-purple);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 18px 36px rgba(37,0,61,0.05);
+}
+
+.founder-message-layout {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.founder-copy h2 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1100px) {
+    .dealership-grid,
+    .tyre-layout,
+    .founder-message-layout {
+        grid-template-columns: 1fr;
+    }
 }
 
 .industries-section {
@@ -884,7 +1297,7 @@ main {
     padding: 2rem 1.6rem 1.7rem;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    background: linear-gradient(180deg, var(--white), rgba(245,234,247,0.35));
+    background: linear-gradient(180deg, var(--white), rgba(245,236,247,0.35));
 }
 
 .why-number {
@@ -925,10 +1338,12 @@ main {
 }
 
 .logo-card {
-    min-height: 118px;
+    min-height: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.7rem;
     border-radius: 16px;
     border: 1px solid var(--border);
     background: rgba(255,255,255,0.56);
@@ -937,6 +1352,27 @@ main {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
+    padding: 0.9rem 0.75rem;
+    overflow: hidden;
+}
+
+.logo-card img {
+    display: block;
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0.1);
+}
+
+.logo-card span {
+    display: block;
+    text-align: center;
+    font-size: 0.55rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: var(--deep-purple);
 }
 
 .cta-section {
@@ -1155,7 +1591,7 @@ main {
 .page-hero {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(37, 0, 61, 0.96), rgba(82, 0, 111, 0.82));
+    background: linear-gradient(135deg, rgba(43, 9, 63, 0.96), rgba(126, 39, 124, 0.82));
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -1287,7 +1723,7 @@ main {
 .story-copy {
     position: relative;
     padding-left: 1.5rem;
-    border-left: 2px solid rgba(82, 0, 111, 0.26);
+    border-left: 2px solid rgba(126, 39, 124, 0.26);
 }
 
 .story-copy h2 {
@@ -1416,7 +1852,7 @@ main {
 .approach-line {
     width: 48px;
     height: 2px;
-    background: rgba(82, 0, 111, 0.26);
+    background: rgba(126, 39, 124, 0.26);
 }
 
 .approach-item h3 {
@@ -1448,7 +1884,7 @@ main {
 }
 
 .mission-panel-alt {
-    background: linear-gradient(135deg, #ffffff, #f5eaf7);
+    background: linear-gradient(135deg, #ffffff, #F5ECF7);
     border: 1px solid var(--border);
     color: var(--dark-text);
 }
@@ -1498,7 +1934,7 @@ main {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: rgba(82, 0, 111, 0.18);
+    background: rgba(126, 39, 124, 0.18);
 }
 
 .timeline-item {
@@ -1527,7 +1963,7 @@ main {
     width: 2px;
     height: 100%;
     min-height: 110px;
-    background: rgba(82, 0, 111, 0.18);
+    background: rgba(126, 39, 124, 0.18);
 }
 
 .timeline-line::before {
@@ -1540,7 +1976,7 @@ main {
     transform: translateX(-50%);
     border-radius: 50%;
     background: var(--primary-purple);
-    box-shadow: 0 0 0 6px rgba(82, 0, 111, 0.08);
+    box-shadow: 0 0 0 6px rgba(126, 39, 124, 0.08);
 }
 
 .timeline-copy {
@@ -2281,7 +2717,7 @@ main {
     width: 2.4rem;
     height: 2.4rem;
     border-radius: 50%;
-    background: rgba(82, 0, 111, 0.08);
+    background: rgba(126, 39, 124, 0.08);
     color: var(--primary-purple);
     font-size: 1.5rem;
     transition: transform 0.25s ease, background 0.25s ease;
@@ -2289,7 +2725,7 @@ main {
 
 .project-card:hover .project-arrow {
     transform: translateX(8px);
-    background: rgba(82, 0, 111, 0.12);
+    background: rgba(126, 39, 124, 0.12);
 }
 
 .featured-project-section {
@@ -2319,7 +2755,7 @@ main {
     bottom: 2rem;
     max-width: 540px;
     padding: 1.2rem 1.4rem;
-    background: rgba(37, 0, 61, 0.7);
+    background: rgba(43, 9, 63, 0.7);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 18px;
@@ -2531,6 +2967,10 @@ main {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    .future-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .why-grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
@@ -2541,7 +2981,10 @@ main {
     .industry-feature,
     .contact-layout,
     .office-layout,
-    .intro-layout {
+    .intro-layout,
+    .battery-program-grid,
+    .partnership-layout,
+    .civil-programme-layout {
         grid-template-columns: 1fr;
     }
 
@@ -2593,7 +3036,7 @@ main {
         right: 0;
         width: min(82vw, 330px);
         height: 100vh;
-        background: rgba(37, 0, 61, 0.98);
+        background: rgba(43, 9, 63, 0.98);
         padding: 6rem 1.4rem 2rem;
         z-index: 999;
         box-shadow: -18px 0 40px rgba(0,0,0,0.2);
@@ -2768,7 +3211,7 @@ main {
 
 .hero {
     position: relative;
-    background: linear-gradient(135deg, rgba(37, 0, 61, 0.9), rgba(82, 0, 111, 0.75));
+    background: linear-gradient(135deg, rgba(43, 9, 63, 0.9), rgba(126, 39, 124, 0.75));
     overflow: hidden;
 }
 
@@ -2884,7 +3327,7 @@ main {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(37, 0, 61, 0.12);
+    box-shadow: 0 18px 40px rgba(43, 9, 63, 0.12);
 }
 
 .service-card,
@@ -2912,7 +3355,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: rgba(82, 0, 111, 0.08);
+    background: rgba(126, 39, 124, 0.08);
     color: var(--primary-purple);
     font-weight: 700;
     margin-bottom: 1rem;
@@ -3152,7 +3595,7 @@ main {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    border: 1px solid rgba(82, 0, 111, 0.2);
+    border: 1px solid rgba(126, 39, 124, 0.2);
     border-radius: 12px;
     padding: 0.9rem 1rem;
     background: var(--white);
@@ -3165,7 +3608,7 @@ main {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-purple);
-    box-shadow: 0 0 0 4px rgba(82, 0, 111, 0.08);
+    box-shadow: 0 0 0 4px rgba(126, 39, 124, 0.08);
 }
 
 .form-group textarea {
@@ -3175,8 +3618,8 @@ main {
 
 .form-status {
     margin-top: 1rem;
-    background: rgba(82,0,111,0.06);
-    border: 1px solid rgba(82,0,111,0.15);
+    background: rgba(126,39,124,0.06);
+    border: 1px solid rgba(126,39,124,0.15);
     color: var(--primary-purple);
     padding: 0.9rem 1rem;
     border-radius: 12px;
@@ -3264,7 +3707,7 @@ main {
     top: 0.5rem;
     bottom: 0.5rem;
     width: 2px;
-    background: rgba(82, 0, 111, 0.2);
+    background: rgba(126, 39, 124, 0.2);
 }
 
 .timeline-item {
@@ -3343,7 +3786,7 @@ main {
         right: -110%;
         width: min(82vw, 340px);
         height: 100vh;
-        background: rgba(37, 0, 61, 0.97);
+        background: rgba(43, 9, 63, 0.97);
         box-shadow: -20px 0 30px rgba(0,0,0,0.18);
         transition: right 0.25s ease;
         padding: 6rem 1.5rem 2rem;

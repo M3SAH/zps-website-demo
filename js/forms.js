@@ -4,6 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!form) return;
 
     const statusBox = document.getElementById('form-status');
+    const serviceSelect = document.getElementById('service');
+    const serviceContext = document.getElementById('service-context');
+
+    const updateServiceContext = () => {
+        if (!serviceSelect || !serviceContext) return;
+
+        const selectedValue = serviceSelect.value;
+        const message = selectedValue === 'Vehicle Batteries' || selectedValue === 'Civil Servant Programme'
+            ? 'Please provide your vehicle/product requirements and our team will get back to you.'
+            : '';
+
+        serviceContext.textContent = message;
+        serviceContext.hidden = !message;
+        serviceContext.classList.toggle('visible', Boolean(message));
+    };
+
+    if (serviceSelect) {
+        serviceSelect.addEventListener('change', updateServiceContext);
+        updateServiceContext();
+    }
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -44,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             form.reset();
+            updateServiceContext();
             submitButton.disabled = false;
             submitButton.textContent = originalText;
         }, 1200);
