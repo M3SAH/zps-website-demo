@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.disabled = true;
         submitButton.textContent = 'Sending...';
 
+        // TODO: Replace this local simulation with a real form backend such as Formspree or an email API.
+
         if (statusBox) {
             statusBox.textContent = 'Thank you. Your enquiry has been prepared locally for review and can be connected to a real email backend later.';
             statusBox.classList.add('visible');
